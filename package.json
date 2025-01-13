@@ -1,0 +1,23 @@
+{
+  "name": "my-nodejs-project",
+  "version": "1.0.0",
+  "description": "a service doing web scrapping and page",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaLyn06/my-nodejs-project.git"
+  },
+  "author": "Ma. Lyn Gamboa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaLyn06/my-nodejs-project/issues"
+  },
+  "homepage": "https://github.com/MaLyn06/my-nodejs-project#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
