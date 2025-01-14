@@ -46,6 +46,21 @@
         
         API Response: After the task is processed, the system returns the job ID, URL, and status.
     
+    SAMPLE REQUEST TO POSTMAN
+    
+        POSTMAN REQUEST (POST -- Request to submit a Job)
+
+        curl --location 'http://localhost:3000/jobs' \
+        --header 'Content-Type: application/json' \
+        --data '{
+        "url": "https://example.com"
+        }
+        '
+
+        POSTMAN REQUEST ( POST -- Request to Fetch the Job Status )
+
+        curl --location 'http://localhost:3000/jobs/{id}'
+    
     Additionally, a folder has been included with diagrams, including a flowchart and sequence diagram, to illustrate the process and how it works.
 
 3. Technical Decisions
