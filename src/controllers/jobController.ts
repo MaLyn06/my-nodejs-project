@@ -11,14 +11,12 @@ export const addScrapedContents = async (req: Request, res: Response): Promise<a
     }
   
     try {
-      // Create a new job
       const job = new Job({ url, content });
 
       await job.save();
-      // Check if content is provided
+      
       let jobContent = content;
   
-      // If content is not provided, scrape the page content
       if (!jobContent) {
         try {
           jobContent = await scrapePageContent(url);
@@ -36,7 +34,6 @@ export const addScrapedContents = async (req: Request, res: Response): Promise<a
   
       try {
         const summary = await generateSummary(jobContent);
-        console.log("summary", summary)
         job.status = 'completed';
         job.summary = summary;
       } catch (error) {
@@ -47,7 +44,6 @@ export const addScrapedContents = async (req: Request, res: Response): Promise<a
         await job.save();
       }
   
-      // Return job status and information
       const { _id, url: _url, status } = job;
       return res.status(201).json({ id: _id, url: _url, status });
   

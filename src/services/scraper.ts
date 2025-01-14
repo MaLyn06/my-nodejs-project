@@ -8,7 +8,7 @@ export async function scrapePageContent(url: string): Promise<string> {
 
   const page = await browser.newPage();
   try {
-    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });  // Increased timeout
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });  
     const content = await page.evaluate(() => {
     const body = document.querySelector('body');
       return body ? body.innerText : '';

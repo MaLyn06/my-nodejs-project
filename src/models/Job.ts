@@ -18,7 +18,6 @@ const JobSchema: Schema = new Schema({
   updated_at: { type: Date, default: Date.now },
 });
 
-// Update `updated_at` field automatically before saving
 JobSchema.pre('save', function(next) {
   this.updated_at = new Date();
   next();
