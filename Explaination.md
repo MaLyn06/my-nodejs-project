@@ -67,33 +67,33 @@
 
     1. MongoDB
 
-        Why MongoDB? I chose MongoDB because it is flexible and can easily handle the unstructured data (such as job status, content, error messages). It also scales well as the system grows.
+        I chose MongoDB because it’s great for handling unstructured data like job statuses, errors, and scraped content. Its flexibility allows easy updates as requirements change, and it scales well with growing data.
 
     2. Puppeteer for Scraping
 
-        Why Puppeteer? Puppeteer simulates a real browser, which is important for scraping modern websites that use JavaScript to load their content.
+        Puppeteer was my tool of choice for scraping because it can emulate a real browser. This is crucial for interacting with modern websites that rely on JavaScript to load dynamic content.
 
     3. OpenAI for Summarization
 
-        Why OpenAI? I use OpenAI’s GPT-4 model for summarization because it generates high-quality, coherent summaries from complex textual data.
+        OpenAI’s GPT-4 was used for summarization because it produces accurate and concise summaries from complex content. It’s reliable and saves time compared to building a summarization tool from scratch.
 
     4. Mongoose for Data Management
 
-        Why Mongoose? Mongoose provides a structure for managing data within MongoDB and helps us track job details like status, errors, and content.
+        I used Mongoose to create a structured way of managing data in MongoDB. It made tracking job statuses, errors, and scraped content straightforward and consistent.
 
     5. Error Handling and Status Tracking
     
-        Why Error Handling? It's important to handle errors properly. If scraping or summarization fails, the system will mark the job as failed and provide helpful error messages.
+        Error handling was prioritized to ensure failed jobs are flagged with helpful error messages. This makes troubleshooting easier and keeps the system predictable for admins.
 
     Additionally I’ve structured the project into models, controllers, routes, and services within the src folder, with each part serving a specific function:
 
         - Models define the data format (like the Job model for storing job information).
 
-        - Controllers handle the business logic, such as job creation and status updates.
+        - Controllers manage the main logic, like creating and updating jobs.
 
         - Routes manage how users interact with the system, routing requests to the appropriate controller.
 
-        - Services carry out the main tasks, such as scraping content and generating summaries.
+        - Services perform key tasks like scraping content and summarizing it.
 
     This organization helps keep the system clean, easy to maintain, and ready for future scalability.
 
@@ -113,7 +113,7 @@
 
     Proof of Concept (PoC)
 
-        This system is currently a proof of concept (PoC), demonstrating the core functionality of scraping and summarizing content. It works well for basic use cases, but it's not yet optimized for large-scale, production environments.
+        TThis is a proof of concept, designed to show basic functionality. It works well for small tasks but isn’t optimized for large-scale operations.
 
 To Make This Production-Ready:
 
