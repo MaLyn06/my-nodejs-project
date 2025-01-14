@@ -1,5 +1,5 @@
 {
-  "name": "my-nodejs-project",
+  "name": "technical-assessment",
   "version": "1.0.0",
   "description": "A service doing web scrapping and page summaries",
   "main": "index.ts",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaLyn06/my-nodejs-project.git"
+    "url": "git+https://github.com/MaLyn06/technical-assessment.git"
   },
   "author": "Ma. Lyn Gamboa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MaLyn06/my-nodejs-project/issues"
+    "url": "https://github.com/MaLyn06/technical-assessment/issues"
   },
-  "homepage": "https://github.com/MaLyn06/my-nodejs-project#readme",
+  "homepage": "https://github.com/MaLyn06/technical-assessment#readme",
   "dependencies": {
     "axios": "^1.7.9",
     "dotenv": "^16.4.7",
