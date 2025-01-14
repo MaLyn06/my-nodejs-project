@@ -67,7 +67,7 @@
 
     1. MongoDB
 
-        Why MongoDB? We chose MongoDB because it is flexible and can easily handle the unstructured data (such as job status, content, error messages). It also scales well as the system grows.
+        Why MongoDB? I chose MongoDB because it is flexible and can easily handle the unstructured data (such as job status, content, error messages). It also scales well as the system grows.
 
     2. Puppeteer for Scraping
 
@@ -75,7 +75,7 @@
 
     3. OpenAI for Summarization
 
-        Why OpenAI? We use OpenAI’s GPT-4 model for summarization because it generates high-quality, coherent summaries from complex textual data.
+        Why OpenAI? I use OpenAI’s GPT-4 model for summarization because it generates high-quality, coherent summaries from complex textual data.
 
     4. Mongoose for Data Management
 
