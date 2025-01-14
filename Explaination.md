@@ -47,8 +47,8 @@
         API Response: After the task is processed, the system returns the job ID, URL, and status.
     
     SAMPLE REQUEST TO POSTMAN
-    
-        POSTMAN REQUEST (POST -- Request to submit a Job)
+
+    Request to submit a Job
 
         curl --location 'http://localhost:3000/jobs' \
         --header 'Content-Type: application/json' \
@@ -57,7 +57,7 @@
         }
         '
 
-        POSTMAN REQUEST ( POST -- Request to Fetch the Job Status )
+    Request to Fetch the Job Status 
 
         curl --location 'http://localhost:3000/jobs/{id}'
     
